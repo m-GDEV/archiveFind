@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "ArchiveFind",
+    "description": "Finds an archived version of a site.",
+    "version": "1.0",
+    "action": {
+        "default_title": "Finds an archived version of a site.",
+        "default_icon": "archive.png"
+    },
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "host_permissions": ["https://12ft.io/*"],
+    "background": {
+        "service_worker": "service_worker.js"
+    }
+}
