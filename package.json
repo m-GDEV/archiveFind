@@ -1,0 +1,17 @@
+{
+    "name": "archive-find",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/m-GDEV/archiveFind",
+    "author": "Musa Ahmed <musaa.ahmed7@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "web-ext run",
+        "build": "web-ext build",
+        "lint": "web-ext lint",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "web-ext": "^7.10.0"
+    }
+}
