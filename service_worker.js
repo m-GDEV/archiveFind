@@ -6,9 +6,11 @@ chrome.action.onClicked.addListener(async (tab) => {
     });
 
     if (currentTab) {
-        const currentTabUrl = currentTab.url;
+        const currentTabUrl = new URL(currentTab.url);
+        currentTabUrl.search = "";
+
         const redirectUrl = `https://archive.ph/${encodeURIComponent(
-            currentTabUrl
+            currentTabUrl.toString()
         )}`;
 
         // Perform the redirection
